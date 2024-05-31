@@ -1,0 +1,32 @@
+Si scriva una libreria di classi per la gestione di uno stack di Studente.
+
+In particolare si richiede di:
+
+
+
+- Definire tre classi di eccezioni denominate StackException, FullStackException ed EmptyStackException, dove la prima è superclasse delle restanti due.
+
+
+
+- Definire una classe Studente dotata delle seguenti proprietà: String nome, String matricola, double votoMedio; la proprietà matricola è in sola lettura,
+le restanti sono in lettura e scrittura. Si preveda un costruttore che consente di inizializzare tutte le proprietà.
+Si preveda inoltre un metodo toString() che produca la seguente stringa: "nome - matricola - votoMedio",
+dove il voto medio deve essere riportato con sole due cifre decimali.
+
+
+
+- Definire una classe StackStudenti che implementa uno struttura dati in grado di contenere degli oggetti istanze della classe Studente;
+la struttura dati implementa un comportamento di tipo LastInFirstOut;
+si prevedano i seguenti metodi (significato ovvio e qui non riportato):
+isEmpty, isFull, push, pop, top; i metodi pop e top lanciano l'eccezione EmptyStackException se invocate in caso di stack vuoto;
+il metodo push lancia l'eccezione FullStackException in caso di stack pieno.
+Si prevedano due costruttori sovraccarichi; uno senza parametri che istanza uno stack in grado di contenere massimo 50 studenti,
+l'altro invece riceve un intero il cui valore rappresenta la capienza massima dello stack;
+tale ultimo costruttore lancia la IllegalArgumentException nel caso in cui venga passato un valore minore o uguale a zero.
+
+
+
+Organizzazione delle classi.
+
+Definire un package nel formato nomeCognome (si usino nome e cognome propri). Le classi Studente e StackStudente vanno inserite nel package nomeCognome.dataStructures.
+Le classi StackException, FullStackException ed EmptyStackException vanno inserite nel package nomeCognome.exceptions

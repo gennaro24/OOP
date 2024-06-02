@@ -44,4 +44,8 @@ public class CopyLines {
 
         return stb.toString();
     }
+
+    public void salvaOBJ(){
+
+    }
 }

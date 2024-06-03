@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.TreeMap;
 
-public class Gruppo {
+public class Gruppo implements Serializable{
     private String nomeGruppo;
     private TreeMap<String , Persona> gruppo;
 

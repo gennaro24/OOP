@@ -11,7 +11,7 @@ public class Main {
         Gruppo gCOPIA = new Gruppo("GRUPPO23");
         try{
             g.salvaOBJ("ciao.txt");
-            gCOPIA = (Gruppo) g.leggiOBJ("ciao.txt");
+            gCOPIA = g.leggiOBJ("ciao.txt");
         }catch (IOException | ClassNotFoundException IOE ){IOE.printStackTrace();}
 
         System.out.println(g);
